@@ -7,7 +7,6 @@ WIDTH = 400
 def test_function(entry):
 		print('This is the entry:', entry)
 
-
 def format_response(weather):
 	try:
 		name = weather['name']
@@ -28,8 +27,6 @@ def get_weather(city):
 	weather = response.json()
 
 	label['text'] = format_response(weather)
-
-
 
 root = tk.Tk()
 
