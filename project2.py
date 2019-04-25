@@ -13,7 +13,7 @@ def format_response(weather):
 		desc = weather['weather'][0]['description']
 		temp = weather['main']['temp']
 
-		final_str = 'City: %s \nConditions: %s \nTemperature (°F): %s' % (name, desc, temp)
+		final_str = 'City: %s \nConditions: %s \nTemperature (°F): %s \n Icon:' % (name, desc, temp)
 	except:
 		final_str = 'There was a problem retrieving that information'
 
